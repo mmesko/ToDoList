@@ -1,0 +1,14 @@
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\TodoList.DAL.dll.config
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\TodoList.DAL.dll
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\TodoList.DAL.pdb
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\EntityFramework.dll
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\EntityFramework.xml
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\obj\Debug\TodoList.DAL.csprojResolveAssemblyReference.cache
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\obj\Debug\TodoList.DAL.dll
+C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.DAL\obj\Debug\TodoList.DAL.pdb
