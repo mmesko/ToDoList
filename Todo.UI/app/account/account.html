@@ -1,0 +1,110 @@
+﻿<div class="container" ng-controller="AccountController">
+    <h3>Account info</h3>
+    <br />
+
+    <!-- User table -->
+    <div class="col-sm-6">
+        <h5><strong>ACCOUNT LOGIN</strong></h5>
+        <br />
+        <table class="table">
+            <tr>
+                <td>USERNAME</td>
+                <td>{{::vm.user.userData.UserName}}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PASSWORD</td>
+                <td>* * * * * * * *</td>
+                <td><button class="btn btn-sm" ng-click="vm.changePassword()">CHANGE</button></td>
+            </tr>
+
+            <tr>
+                <td>EMAIL</td>
+                <td>{{::vm.user.userData.Email }}</td>
+                <td><button class="btn btn-sm" ng-click="vm.changeEmail()">CHANGE</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Change account info-->
+    <!-- Username change -->
+    <div class="col-sm-5 col-sm-offset-1" ng-show="vm.showUserChangeTab">
+        <h5 class="h5">CHANGE USERNAME</h5>
+        <br />
+        <form class="form-group">
+            <div class="form-inline">
+                <label class="col-sm-4">Password</label>
+                <input type="password" class="form-control" ng-model="vm.user.password" />
+            </div>
+            <br />
+            <div class="form-inline">
+                <label class="col-sm-4">New username</label>
+                <input type="text" class="form-control" ng-model="vm.user.userData.UserName"/>
+            </div>
+            <br />
+            <div class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-addon">Username</div>
+                    <input type="text" readonly class="form-control" ng-model="vm.user.userData.UserName" />
+                </div>
+                <button class="btn btn-sm btn-primary" ng-click="vm.confirmNewUsernameOrEmail(vm.user)">Change</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Email change -->
+    <div class="col-sm-5 col-sm-offset-1" ng-show="vm.showEmailChangeTab">
+        <h5 class="h5">CHANGE EMAIL</h5>
+        <br />
+        <form class="form-group">
+            <div class="form-inline">
+                <label class="col-sm-4">Password</label>
+                <input type="password" class="form-control" ng-model="vm.user.password" />
+            </div>
+            <br />
+            <div class="form-inline">
+                <label class="col-sm-4">New email</label>
+                <input type="text" class="form-control" ng-model="vm.user.userData.Email" />
+            </div>
+            <br />
+            <div class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-addon">Email</div>
+                    <input type="text" readonly class="form-control" ng-model="vm.user.userData.Email" />
+                </div>
+                <button class="btn btn-sm btn-primary" ng-click="vm.confirmNewUsernameOrEmail(vm.user)">Change</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Change password -->
+    <div class="col-sm-5 col-sm-offset-1" ng-show="vm.showPasswordChangeTab">
+        <h5 class="h5">CHANGE PASSWORD</h5>
+        <br />
+        <form class="form-group">
+            <div class="form-inline">
+                <label class="col-sm-4">Old password</label>
+                <input type="password" class="form-control" ng-model="vm.user.password" min="6" />
+            </div>
+            <br />
+            <div class="form-inline">
+                <label class="col-sm-4">New password</label>
+                <input type="password" class="form-control" ng-model="vm.newPassword" min="6" />
+            </div>
+            <br />
+            <div class="form-inline">
+                <label class="col-sm-4">Confirm new password</label>
+                <input type="password" class="form-control" ng-model="vm.confirmNew" min="6" />
+            </div>
+            <br />
+
+            <button class="btn btn-sm btn-primary" ng-click="vm.confirmNewPassword(vm.user, vm.newPassword, vm.confirmNew)">Change</button>
+            <div class="alert alert-warning top-buffer" role="alert" ng-if="vm.showPasswordAlert">
+                <p> Password length should at least 6 charachters. Make sure that new password and confirm new password fields are same.</p>
+                <br />
+                <button class="btn btn-sm btn-warning" ng-click="vm.showPasswordAlert=false">Ok</button>
+            </div>
+
+        </form>
+    </div>
+</div>

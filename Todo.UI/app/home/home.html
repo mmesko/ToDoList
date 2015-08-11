@@ -1,0 +1,42 @@
+﻿
+
+<div ng-controller="HomeController">
+    <h3 class="page-header">What's new</h3>
+
+
+    <!-- Angular carousel new -->
+        <div class="carousel col-sm-10 col-sm-offset-1">
+            <carousel interval="vm.myInterval">
+                <slide ng-repeat="slide in vm.slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption pull-left">
+                        <p>{{slide.description}}</p>
+                    </div>
+
+                </slide>
+            </carousel>
+       </div>
+    <div class="col-sm-12">
+       
+        <h5 class="page-header"><strong>Some batman ipsums to fill empty space T.T</strong></h5>
+        <p class="col-sm-3">
+            But I know the rage that drives you. That impossible anger strangIing the grief until the memory of your loved one is just poison in your veins. And one day, you catch yourself wishing the person you loved had never existed so you'd be spared your pain.
+        </p>
+        <p class="col-sm-3 col-sm-offset-1">
+            But I know the rage that drives you. That impossible anger strangIing the grief until the memory of your loved one is just poison in your veins. And one day, you catch yourself wishing the person you loved had never existed so you'd be spared your pain.
+        </p>
+        <p class="col-sm-3 col-sm-offset-1">
+            Gotham's been good to our family, but the city's been suffering. People less fortunate than us have been enduring very hard times. So we built a new, cheap, public transportation system to unite the city. And at the center, Wayne tower.
+        </p>
+    </div>
+    <div class="col-sm-5 big-top-buffer">
+        <p>
+            Todo traineeship project
+        </p>
+        
+        <p>
+           Maja Meško
+        </p>
+    </div>
+       
+    </div>

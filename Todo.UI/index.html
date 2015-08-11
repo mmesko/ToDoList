@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Todo</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/style.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+   
+
+    <div class="container" ng-app="mainModule">
+       
+        <!-- Menu navigation -->
+        <div ng-controller="NavigationController as vm" style="margin-top:5em;">
+
+            <!-- NAVIGATION -->
+            <nav>
+                <div class="navigation">
+                    <div>
+
+                        <!-- Menu -->
+                        <ul class="standardMenu" ng-repeat="menu in vm.menus">
+                            <!-- :: one way binding -->
+                            <li class="{{menu.active}}"><a href="{{menu.link}}" ng-click="vm.setActive($index)">{{::menu.name}}</a></li>
+                        </ul>
+
+                        <!-- User signed out-->
+                        <div ng-show="vm.loggedOut">
+                            <a class="navbar-text pull-right" ng-click="vm.registerClick()">{{vm.authRegister.name}}</a>
+                            <a class="navbar-brand pull-right" ng-click="vm.loginClick()">{{vm.authUser.name}}</a>
+                        </div>
+
+                        <!-- Drop down menu, user signed in -->
+                        <div ng-show="vm.loggedIn === true">
+                            <a class="dropmenu" data-toggle="dropdown">welcome {{vm.user}}<span class="caret"></span></a>                      
+                            <ul class="dropdown-menu pull-right">
+                              
+                                <li><a href="{{vm.account.link}}">{{vm.account.name}}</a></li>
+                                <li><a href="{{vm.mytask.link}}">{{vm.mytask.name}}</a></li>
+                                <li class="divider"></li>
+                                <li><a ng-click="vm.logoutClick()">{{vm.logout.name}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- VIEW -->
+            <div ng-view></div>
+
+            <!-- Alert -->
+            <div id="notification" class="notification {{vm.alert.cls}}">
+                {{vm.alert.msg}}
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/moment.min.js"></script>   <!-- Library for filtering dates -->
+
+    <!-- Angular and dependencies -->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="app/mainModule.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.13.0.min.js"></script> <!-- Angular UI for modals -->
+
+
+    <!-- Modal -->
+    <script src="app/modals/register/registerModal.controller.js"></script>  
+    <script src="app/modals/login/loginModal.controller.js"></script>
+
+    <!-- Services -->   
+    <script src="app/services/authService.service.js"></script>
+    <script src="app/services/navigationMenu.service.js"></script>
+    <script src="app/constants/navigation.constants.js"></script>
+    <script src="app/services/notification.service.js"></script>
+
+    <!--Export table-->
+    <script src="Scripts/tableExport.js"></script>
+    <script src="Scripts/jquery.base64.js"></script>
+
+        <!--Printing-->
+    <script src="Scripts/sprintf.js"></script>
+    <script src="Scripts/jspdf.js"></script>
+    <script src="Scripts/base64.js"></script>
+
+    <!--datepicker-->
+    <script src="Scripts/bootstrap-datepicker.js"></script>
+
+
+     <!-- Filters -->
+    <script src="app/filters/password.filter.js"></script>
+    <script src="app/filters/fromNow.filter.js"></script>
+    
+    <!-- Navigation -->
+    <script src="app/navigation/navigation.controller.js"></script>
+
+    <!-- Home -->
+    <script src="app/home/home.controller.js"></script>
+    <script src="app/home/home.service.js"></script>
+
+    <!-- Account -->
+    <script src="app/account/account.controller.js"></script>
+    <script src="app/account/account.service.js"></script>
+
+
+    <!-- MyTask -->
+    <script src="app/mytask/mytask.controller.js"></script>
+    <script src="app/mytask/mytask.service.js"></script>
+
+    <!-- Tasklist -->
+    <script src="app/tasklist/tasklist.controller.js"></script>   
+    <script src="app/tasklist/tasklist.service.js"></script>
+
+    <!-- Task -->
+    <script src="app/task/task.controller.js"></script>
+    <script src="app/task/task.service.js"></script>
+
+</body>
+</html>

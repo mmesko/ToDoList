@@ -1,0 +1,141 @@
+.datepick {
+    position: absolute;
+    min-width: 150px;
+    min-height: 100px;
+    display: none;
+    font: normal 12px tahoma;
+    color: black;
+    z-index: 9999;
+}
+
+.datepick_header {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 9px 9px 0 0;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.datepick_footer 
+{
+    background: white;
+    border: 1px solid black;
+    border-top: 0;
+    padding: 7px;
+    overflow: hidden;
+}
+
+    .datepick_footer div:first-child 
+    {
+        float: left;
+    }
+
+        .datepick_footer div a 
+        {
+            font-size: 11px;
+            font-weight: bold;           
+            text-decoration: none;
+            color: Gray;
+            padding: 2px 10px 3px 10px;
+            border-radius: 10px;
+        }
+        
+        .datepick_footer div a:hover
+        {
+            background: black;
+            color: White;
+        }
+    
+    .datepick_footer div:last-child 
+    {
+        float: right;
+    }
+    
+    
+
+.datepick_arrowleft {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 8.7px 5px 0;
+    border-color: transparent #ffffff transparent transparent;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.datepick_arrowright {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8.7px;
+    border-color: transparent transparent transparent #ffffff;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.titleMonth  {
+    display: inline-block;
+    width: 100px;
+}
+
+.titleYear  {
+    display: inline-block;
+    width: 40px;
+}
+
+.datepick_datecontainer 
+{
+    background-color: White;
+}
+
+
+.datepick_datecontainer tbody tr td {
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.datepick_datecontainer tbody tr td.datepick_outdatecell {
+    color: #CDCDCD;
+}
+
+.datepick_datecontainer tbody tr td.datepick_disabled {
+    color: #CDCDCD;
+    background-color: #EFEFEF;
+    cursor: default;
+}
+
+
+.datepick_datecontainer tbody tr td:hover {
+    background-color: forestgreen;
+    color: white;
+    border-radius: 4px;
+}
+
+.datepick_datecontainer {
+    font: normal 12px tahoma;
+    border: 1px solid black;
+}
+
+.datepick_datecontainer thead tr td {
+    text-align: center;
+    width: 25px;
+    background-color: white;    
+    border-bottom: 1px solid black;        
+}
+.datepick_today {
+    font-weight: bold;
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 50%;
+}
+
+.datepick_initial {
+    font-weight: bold;
+    color: forestgreen;
+    border: 1px solid forestgreen;
+    border-radius: 50%;
+}

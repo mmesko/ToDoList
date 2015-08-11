@@ -1,5 +1,0 @@
-C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.Common\bin\Debug\TodoList.Common.dll
-C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.Common\bin\Debug\TodoList.Common.pdb
-C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.Common\obj\Debug\TodoList.Common.csprojResolveAssemblyReference.cache
-C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.Common\obj\Debug\TodoList.Common.dll
-C:\Users\mmesko00\Desktop\FarmeronTask\TodoList\TodoList.Common\obj\Debug\TodoList.Common.pdb

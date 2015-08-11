@@ -1,0 +1,257 @@
+﻿
+@import "bootstrap/mixins/nav-vertical-align";
+@import "bootstrap/mixins/background-variant";
+@import "bootstrap/mixins/alerts";
+@import "bootstrap/mixins/border-radius";
+@import "bootstrap/mixins/buttons";
+@import "bootstrap/mixins/center-block";
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/forms";
+@import "bootstrap/mixins/gradients";
+@import "bootstrap/mixins/grid-framework";
+@import "bootstrap/mixins/grid";
+@import "bootstrap/mixins/hide-text";
+@import "bootstrap/mixins/image";
+@import "bootstrap/mixins/labels";
+@import "bootstrap/mixins/list-group";
+@import "bootstrap/mixins/nav-divider";
+@import "bootstrap/mixins/opacity";
+@import "bootstrap/mixins/pagination";
+@import "bootstrap/mixins/panels";
+@import "bootstrap/mixins/progress-bar";
+@import "bootstrap/mixins/reset-filter";
+@import "bootstrap/mixins/resize";
+@import "bootstrap/mixins/responsive-visibility";
+@import "bootstrap/mixins/size";
+@import "bootstrap/mixins/tab-focus";
+@import "bootstrap/mixins/table-row";
+@import "bootstrap/mixins/text-emphasis";
+@import "bootstrap/mixins/text-overflow";
+@import "bootstrap/mixins/vendor-prefixes";
+@import "bootstrap/alerts";
+@import "bootstrap/bootstrap";
+@import "bootstrap/badges";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/button-groups";
+@import "bootstrap/buttons";
+@import "bootstrap/carousel";
+@import "bootstrap/close";
+@import "bootstrap/code";
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/forms";
+@import "bootstrap/glyphicons";
+@import "bootstrap/grid";
+@import "bootstrap/input-groups";
+@import "bootstrap/jumbotron";
+@import "bootstrap/labels";
+@import "bootstrap/list-group";
+@import "bootstrap/media";
+@import "bootstrap/mixins";
+@import "bootstrap/modals";
+@import "bootstrap/navbar";
+@import "bootstrap/navs";
+@import "bootstrap/normalize";
+@import "bootstrap/pager";
+@import "bootstrap/panels";
+@import "bootstrap/pagination";
+@import "bootstrap/popovers";
+@import "bootstrap/print";
+@import "bootstrap/progress-bars";
+@import "bootstrap/responsive-embed";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/scaffolding";
+@import "bootstrap/tables";
+@import "bootstrap/theme";
+@import "bootstrap/thumbnails";
+@import "bootstrap/tooltip";
+@import "bootstrap/type";
+@import "bootstrap/utilities";
+@import "bootstrap/variables";
+@import "bootstrap/wells";
+
+@bodyBackgroundColor: white;
+@navBackgroundColor: #dddddd;
+@fontColor: #dddddd;
+@navigationMarginLeft: 3em;
+
+
+// MARGINS
+.big-top-buffer{
+    margin-top:60px;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+.bottom-buffer{
+    margin-bottom:20px;
+}
+
+.right-buffer{
+    margin-right:20px;
+}
+
+.no-margins{
+    margin:0 0 0 0;
+}
+
+.no-bottom-margin{
+    margin-bottom:0;
+}
+
+//HELPERS 
+.no-resize{
+    resize:none;
+}
+
+.light-gray-background{
+    background-color:lightgray;
+    padding-left:20px;
+    padding-bottom:0;
+}
+// Absolut
+.absolute{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+// HTML Elements
+
+body {
+    background-color: @bodyBackgroundColor;
+}
+
+pre{
+    background-color:white;
+    border:none;
+    margin:0 0 0 0;
+}
+
+// NAVIGATION
+.navigation {
+    .navbar;
+    .navbar-fixed-top;
+    background-color: @navBackgroundColor;
+
+    div {
+        .container;
+    }
+
+    .standardMenu {
+        .nav;
+        .navbar-nav;
+        .nav-pills;
+    }
+
+    .dropmenu {
+        .navbar-brand;
+        .dropdown;
+        .pull-right;
+    }
+}
+
+// PUBLISHERVIEW
+.publisherView {
+    margin-top: 5em;
+
+    div {
+        .container;
+    }
+
+    table {
+        margin-top: 4em;
+        .table;
+    }
+
+    button {
+        .btn;
+    }
+}
+
+// GAMEVIEW
+.gameView {
+    margin-top: 5em;
+
+    div {
+        .container;
+        margin-top: 4em;
+    }
+
+    table {
+        margin-top: 4em;
+        .table;
+    }
+
+    button {
+        .btn;
+    }
+}
+
+// MODAL
+
+// overrides bootstrap modal
+
+.modal-style {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    .modal;
+
+    h3 {
+        .modal-title;
+    }
+
+    form {
+        .modal-body;
+    }
+
+    input {
+        .form-control;
+    }
+
+    button {
+        margin-right: 20px;
+    }
+}
+
+
+// NOTIFCATION
+
+.notification{
+  position: fixed;
+  top: 150px;
+  right: 10px;
+
+}
+
+
+.sample-show-hide {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+}
+
+.sample-show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+  opacity:0;
+}
+
+
+// HOME
+
+.carousel {
+    height: 300px;
+    width: 900px;
+    -ms-align-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+

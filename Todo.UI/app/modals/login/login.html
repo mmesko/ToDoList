@@ -1,0 +1,20 @@
+﻿<div ng-controller="ModalLoginController">
+    <div type="text/ng-template" id="app/modals/login/login.html">
+
+            <div class="modal-header">
+                <h3>Log in</h3>
+            </div>
+            <form>
+                <label>Username: </label>
+                <input ng-model="user.userName" type="text" />
+                <br />
+                <label>Password:</label>
+                <input ng-model="user.password" type="password" />
+                <br />
+                <div>
+                    <button class="btn btn-primary" ng-click="userLogin(user)">Submit</button>
+                    <button class="btn btn-danger" ng-click="cancel()">Close</button>
+                </div>
+            </form>
+    </div>
+</div>

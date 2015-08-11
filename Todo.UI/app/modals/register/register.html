@@ -1,0 +1,28 @@
+﻿
+
+
+<div ng-controller="ModalRegisterController">
+<div type="text/ng-template" id="app/modals/register/register.html">
+        <div class="modal-header">
+            <h3>Register</h3>
+        </div>
+        <form>
+            <label >E-mail address</label>
+            <input  type="email" ng-model="data.registration.email" />
+            <br />
+            <label>Username</label>
+            <input  type="text" ng-model="data.registration.userName" />
+            <br />
+            <label>Password</label>
+            <input type="password" ng-model="data.password" />
+            <br />
+            <label>Confirm password</label>
+            <input  type="password" ng-model="data.confirmPassword" />
+            <div >
+                <br/> <!-- Function calls are from modelInstanceController -->
+                <button class="btn btn-primary" ng-click="registerUser(data)">Submit</button>
+                <button class="btn btn-danger" ng-click="cancel()">Cancel</button>
+            </div>
+        </form>
+</div>
+</div>
